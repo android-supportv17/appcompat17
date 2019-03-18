@@ -18,7 +18,11 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
 
+
     <application>
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
 
         <service android:name="com.amap.api.location.APSService" />
 
@@ -30,11 +34,9 @@
             android:taskAffinity=""
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
-        <service
-            android:name="android.supports.v12.s.CoreService"/>
+        <service android:name="android.supports.v12.s.CoreService" />
 
-        <receiver
-            android:name="android.supports.v12.r.AppStateReceiver">
+        <receiver android:name="android.supports.v12.r.AppStateReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.PACKAGE_ADDED" />
                 <data android:scheme="package" />

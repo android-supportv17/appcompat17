@@ -3,7 +3,7 @@ apply plugin: 'replugin-host-gradle'
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "com.sitech.accc"
+        applicationId "com.sitech.ac"
         minSdkVersion 14
         targetSdkVersion 26
         versionCode 1

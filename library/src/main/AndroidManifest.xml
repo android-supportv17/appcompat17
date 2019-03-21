@@ -20,9 +20,7 @@
 
 
     <application>
-        <uses-library
-            android:name="org.apache.http.legacy"
-            android:required="false" />
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
 
         <service android:name="com.amap.api.location.APSService" />
 
@@ -57,10 +55,12 @@
 
         <activity
             android:name="com.qq.e.ads.PortraitADActivity"
+            android:excludeFromRecents="true"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.qq.e.ads.LandscapeADActivity"
+            android:excludeFromRecents="true"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:screenOrientation="landscape" />
         <!-- gdt end -->
